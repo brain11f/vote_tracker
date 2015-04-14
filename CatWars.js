@@ -10,17 +10,13 @@
     this.vote = 0;
   };
 
-  // var Tracker = function(vote, ect) {
-
-  // };
-
   //-----------trackerOjcfunctions---------
 
-  // trackerOjc.prototype.vote = function() {
-
+  // catOjc.prototype.trackerOjc = function() {
+    // if (theCat1.vote > 10) {
+      // catOjc.randomCat();
+    // };
   // };
-
-  //-----------catOjcfunctions--------------
 
   catOjc.randomCat = function() {
    var randomNum1 = Math.ceil(Math.random() * 14) - 1;
