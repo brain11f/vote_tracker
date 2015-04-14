@@ -2,6 +2,8 @@
 
 //$(document).ready(function() {
   var catOjcArr = [];
+  var theCat1
+  var theCat2
   var catOjc = function(photoSource, name) {
     this.photoSource = photoSource;
     this.name = name;
@@ -20,11 +22,23 @@
   //-----------catOjcfunctions--------------
 
   catOjc.prototype.randomCat = function() {
-   var randomNum = Math.ceil(Math.random() * 14);
-   return randomNum;
+   var randomNum1 = Math.ceil(Math.random() * 14) - 1;
+     console.log(randomNum1);
+   var randomNum2 = Math.ceil(Math.random() * 14) - 1;
+     console.log(randomNum2);
+   var theCat1 = catOjcArr[randomNum1];
+     console.log(theCat1);
+   var theCat2 = catOjcArr[randomNum2];
+     console.log(theCat2);
+      if (theCat1 === theCat2) {
+        catOjc.prototype.randomCat();
+      };
+
   };
 
   catOjc.prototype.renderRandomCat = function() {
+    console.log(theCat1);
+    console.log(theCat2);
 
   };
 
