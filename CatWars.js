@@ -1,6 +1,6 @@
 'use strict';
 
-//(function($) {
+// (function($) {
   var theCat1;
   var theCat2;
 
@@ -60,4 +60,4 @@
 
   catOjc.renderRandomCat();
 
-//})(jQuery);
+// })(jQuery);
