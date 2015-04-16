@@ -23,9 +23,10 @@
     console.log(err);
   });
 
-  function onAjaxLoad() {
   var theCat1;
   var theCat2;
+
+  function onAjaxLoad() {
 
   var randomCat = function() {
    var randomNum1 = Math.ceil(Math.random() * 14) - 1;
@@ -39,7 +40,6 @@
       };
   };
 
-
   var renderRandomCat = function() {
     randomCat();
     $('#image1').attr({
@@ -51,7 +51,19 @@
 
     };
 
+    var images = window.images;
+    $('#button1').click(function() {
+      ++theCat1.vote;
+      console.log(theCat1.vote);
+      renderRandomCat();
+  });
+    $('#button2').click(function() {
+      ++theCat2.vote;
+      renderRandomCat();
+  });
+
    renderRandomCat();
+
   };
 
 // })(jQuery);
