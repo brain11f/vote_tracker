@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="all">
 <head>
   <meta charset="UTF-8">
   <title>Cat Wars!</title>
@@ -11,19 +11,24 @@
   </header>
   <main>
     <p>Witch cate is the cutest?</p>
-    <div>
-      <img id="image1" src="catPhotos/01 - pPA0iM0.jpg">
-    </div>
-    <button id="button1" name="button1"></button>
+  <div id="parent">
+    <div id="first">
+            <img id="image1" src="catPhotos/01 - pPA0iM0.jpg">
+    <button id="button1" name="button1">This One!</button>
+  </div>
 
+    <div id="second">
     <div id="canvas-holder">
-      <canvas id="myChart" width="400" height="400"></canvas>
+      <canvas id="myChart" width="270" height="270"></canvas>
+    </div>
     </div>
 
-    <div>
-      <img id="image2" src="catPhotos/01 - pPA0iM0.jpg">
+    <div id="third">
+        <img id="image2" src="catPhotos/01 - pPA0iM0.jpg">
+    <button id="button2" name="button2">Or Me!</button>
     </div>
-    <button id="button2" name="button2"></button>
+  </div>
+
   </main>
 
   <script type="text/javascript" src="jquery-2.1.3.min.js"></script>

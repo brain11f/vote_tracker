@@ -8,13 +8,11 @@
       {
         value: 1,
         color: '#FDFD49',
-        highlight: '#F37395',
         label: 'Not the answer'
       },
       {
         value: 1,
         color: '#4A49FD',
-        highlight: '#F39246',
         label: 'The answer'
       }
     ];

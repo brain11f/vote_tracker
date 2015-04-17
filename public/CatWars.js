@@ -18,9 +18,6 @@
   .done(function(res) {
     images = res.data.images
     onAjaxLoad();
-    for (var i = 0; i < images.length; i++) {
-      images[i].vote + 1;
-    };
   })
   .fail(function(err) {
     console.log(err);

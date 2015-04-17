@@ -18,3 +18,9 @@
    });
 
  })(jQuery);
+
+// localStorage.setItem('votes', JSON.stringify({theCat1.vote}));
+// Procilefile
+// init packagr.json
+// npm install express --save
+// localStorage.setItem("server", input.value);
