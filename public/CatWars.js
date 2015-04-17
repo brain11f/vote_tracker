@@ -18,6 +18,9 @@
   .done(function(res) {
     images = res.data.images
     onAjaxLoad();
+    for (var i = 0; i < images.length; i++) {
+      images[i].vote + 1;
+    };
   })
   .fail(function(err) {
     console.log(err);
@@ -25,6 +28,8 @@
 
   var theCat1;
   var theCat2;
+  window.theCat1 = theCat1
+  window.theCat2 = theCat2
 
   function onAjaxLoad() {
 
